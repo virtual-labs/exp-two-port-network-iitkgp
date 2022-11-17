@@ -2,37 +2,37 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "A 2-port resistive network satisfy the condition A = D = 3/2B = 4/3C. The z11 of the network is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "4/3",
+        "b": "3/4",
+        "c": "2/3",
+        "d": "3/2"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "You have chosen correct answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen wrong answer"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In a two port parameter, what are the other names of z parameter?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Open circuit Impedance parameter",
+        "b": "Short circuit Impedance parameter",
+        "c": "Open circuit Admittance parameter",
+        "d": "Short circuit Impedance parameter"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "You have chosen correct answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen wrong answer"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
