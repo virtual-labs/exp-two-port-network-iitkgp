@@ -32,4 +32,6 @@ b) Repeat the same task to other end 2-2' with the terminal 1-1' kept open and s
 c) Calculate the parameter Z, Y, h, ABCD for both networks M and N .
 									
 <li> Connect the two network in cascade as shown in figure and once again determine the parameter.</li>
+									
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	
