@@ -26,10 +26,13 @@
 								<ol type="1">
 								<li> Perform the open circuit and short circuit tests on the two-port network M and N separately as given below:</li>
 	a) Apply a voltage 12V dc across terminals 1-1' of the network and measure the Voltage V2 and currents I<sub>1</sub> and I<sub>2</sub> with terminal 2-2' under open circuit and short circuit conditions.
+<br>
 									
 b) Repeat the same task to other end 2-2' with the terminal 1-1' kept open and short respectively.
+<br>
 									
 c) Calculate the parameter Z, Y, h, ABCD for both networks M and N .
+<br>
 									
 <li> Connect the two network in cascade as shown in figure and once again determine the parameter.</li>
 									
