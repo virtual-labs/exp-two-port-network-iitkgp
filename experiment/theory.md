@@ -12,54 +12,65 @@
 									<br>
 									<br>
 									<p style ="text-align:center;">
-									$$[[V_1], [V_2]] = [[Z_(11), Z_(12)], [Z_(21), Z_(22)]] * [[I_1] , [I_2]]$$
-									<br>
-									<br>
-where $$Z_(11) = (V_1/I_1)_(I_2 = 0)$$ &nbsp; &nbsp; $$Z_(12) = (V_1/I_2)_(I_1 = 0)$$
+										
+$$ [[V_1], [V_2]] = [[Z_{11}, Z_{12}], [Z_{21}, Z_{22}]] * [[I_1] , [I_2] $$
+										
+									
+where
+										
+$$ Z_{11} = (V_1/I_1)_(I_2 = 0)$$
+										
+$$Z_{12} = (V_1/I_2)_(I_1 = 0) $$
  <br>
-									<br>
-$$Z_(21) = (V_2/I_1)_(I_2 = 0)$$ &nbsp; &nbsp; and 
-$$Z_(22) = (V_2/I_2)_(I_1 = 0)$$ </p>
+									
+$$ Z_{21} = (V_2/I_1)_(I_2 = 0) \ and $$
+										
+$$ Z_{22} = (V_2/I_2)_(I_1 = 0) $$
 									<br>
 									<br>
 									<p> Similarly, current I<sub>1</sub>, I<sub>2</sub> can be expressed in terms of voltage V<sub>1</sub> and V<sub>2</sub> using Y parameters.</p>
-									<br>
-									<br>
-									<p style ="text-align:center;">
-$$[[I_1], [I_2]] = [[Y_(11), Y_(12)], [Y_(21), Y_(22)]] * [[V_1] , [V_2]]$$
-									<br>
-									<br>
-									where
-$$Y_(11) = (I_1/V_1)_(V_2 = 0)$$ &nbsp; &nbsp; 
-$$Y_(12) = (I_1/V_2)_(V_1 = 0)$$ <br>
-									<br>
-$$Y_(21) = (I_2/V_1)_(V_2 = 0)$$ &nbsp; &nbsp; and
-$$Y_(22) = (I_2/V_2)_(V_1 = 0)$$</p>
-									<br>
-									<br>
-									<p>Similarly,  voltage V<sub>1</sub> and current I<sub>2</sub> can be expressed in terms of current I<sub>1</sub> and voltage V<sub>2</sub> using h parameters as below.</p>
-									<p style ="text-align:center;">
-$$[[V_1], [I_2]] = [[h_(11), h_(12)], [h_(21), h_(22)]] * [[I_1] , [V_2]]$$
-									<br>
-									<br>
-									where 
-$$h_(11) = (V_1/I_1)_(V_2 = 0)$$ &nbsp; &nbsp;
-$$h_(12) = (V_1/V_2)_(I_1 = 0)$$ <br>
-									<br>
-$$h_(21) = (I_2/I_1)_(V_2 = 0)$$ &nbsp; &nbsp; and 
-$$h_(22) = (I_2/V_2)_(I_1 = 0)$$</p>
-									<p>Lastly, voltage V<sub>1</sub> and current `I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
-									<br>
-									<br>
-									<p style ="text-align:center;">
-$$[[V_1], [I_1]] = [[A, B], [C, D]] * [[V_2] , [-I_2]]$$
-									<br>
-									<br>
-									where $$A = (V_1/V_2)_(I_2 = 0)$$ &nbsp; &nbsp; 
-$$-B = (V_1/I_2)_(V_2 = 0)$$ <br>
-									<br>
-$$C = (I_1/V_2)_(I_2 = 0)$$ &nbsp; &nbsp; and
-$$-D = (I_1/I_2)_(V_2 = 0)$$</p>
+									
+										
+$$ [[I_1], [I_2]] = [[Y_{11}, Y_{12}], [Y_{21}, Y_{22}]] * [[V_1] , [V_2]] \ where $$
+									
+$$ Y_{11} = (I_1/V_1)_(V_2 = 0) $$
+										
+$$ Y_{12} = (I_1/V_2)_(V_1 = 0) $$
+										
+									
+$$ Y_{21} = (I_2/V_1)_(V_2 = 0)  \ and $$
+										
+$$ Y_{22} = (I_2/V_2)_(V_1 = 0) $$
+										
+									
+<p>Similarly,  voltage V<sub>1</sub> and current I<sub>2</sub> can be expressed in terms of current I<sub>1</sub> and voltage V<sub>2</sub> using h parameters as below.</p>
+									
+$$ [[V_1], [I_2]] = [[h_{11}, h_{12}], [h_{21}, h_{22}]] * [[I_1] , [V_2]] \ where $$
+									
+									 
+$$ h_{11} = (V_1/I_1)_(V_2 = 0) $$
+										
+$$ h_{12} = (V_1/V_2)_(I_1 = 0) $$ 
+									
+$$ h_{21} = (I_2/I_1)_(V_2 = 0) \ and $$
+										
+$$ h_{22} = (I_2/V_2)_(I_1 = 0) $$
+										
+<p>Lastly, voltage V<sub>1</sub> and current `I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
+									
+									
+$$ [[V_1], [I_1]] = [[A, B], [C, D]] * [[V_2] , [-I_2]] \ where $$
+	
+									
+$$A = (V_1/V_2)_(I_2 = 0) ;$$ 
+	
+$$ -B = (V_1/I_2)_(V_2 = 0) $$ 
+	
+									
+$$ C = (I_1/V_2)_(I_2 = 0) \ and $$
+	
+$$ -D = (I_1/I_2)_(V_2 = 0) $$
+	
 <span style="background-color: rgb(255, 255, 255); font-size: 21px; "><b>Cascading Mode Circuit Diagram:</b></span>
 									<br>
 									<br>
