@@ -26,7 +26,9 @@ $$ [[I_1], [I_2]] = [[Y_{11}, Y_{12}], [Y_{21}, Y_{22}]] * [[V_1] , [V_2]] \ whe
 
 $$ Y_{11} = (I_1/V_1)_(V_2 = 0) \ \ \ Y_{21} = (I_2/V_1)_(V_2 = 0)  \ and $$
 
+
 $$ Y_{12} = (I_1/V_2)_(V_1 = 0) \ \ \ Y_{22} = (I_2/V_2)_(V_1 = 0) $$
+
 
 Similarly,  voltage V<sub>1</sub> and current I<sub>2</sub> can be expressed in terms of current I<sub>1</sub> and voltage V<sub>2</sub> using h parameters as below.
 									
@@ -34,8 +36,10 @@ $$ [[V_1], [I_2]] = [[h_{11}, h_{12}], [h_{21}, h_{22}]] * [[I_1] , [V_2]] \ whe
 									
 									 
 $$ h_{11} = (V_1/I_1)_(V_2 = 0) \ \ \ h_{21} = (I_2/I_1)_(V_2 = 0) \ and $$
+
 										
-$$ h_{12} = (V_1/V_2)_(I_1 = 0) \ \ \ h_{22} = (I_2/V_2)_(I_1 = 0) $$ 
+$$ h_{12} = (V_1/V_2)_(I_1 = 0) \ \ \ h_{22} = (I_2/V_2)_(I_1 = 0) $$
+
 									
 										
 <p>Lastly, voltage V<sub>1</sub> and current `I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
