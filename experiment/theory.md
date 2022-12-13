@@ -23,9 +23,9 @@ $$ \begin {bmatrix}
 	I_2
 	\end {bmatrix} $$
 
-$$ where \ Z_{11} = (V_1/I_1)_(I_2 = 0) \ \ \ Z_{21} = (V_2/I_1)_(I_2 = 0) \ and $$
-										
-$$ Z_{12} = (V_1/I_2)_(I_1 = 0) \ \ \ Z_{22} = (V_2/I_2)_(I_1 = 0) $$										
+$$ where \ Z_{11} = (\frac {V_1}{I_1})_{I_2 = 0} \ \ \ Z_{12} = (\frac {V_1}{I_2})_{I_1 = 0}  $$
+
+$$  Z_{21} = (\frac {V_2}{I_1})_{I_2 = 0} \ \ \ \ and \  Z_{22} = (\frac {V_2}{I_2})_{I_1 = 0}  $$									
 
 Similarly, current I<sub>1</sub>, I<sub>2</sub> can be expressed in terms of voltage V<sub>1</sub> and V<sub>2</sub> using Y parameters.
 
