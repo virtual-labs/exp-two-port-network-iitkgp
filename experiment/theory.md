@@ -15,8 +15,8 @@ $$ \begin {bmatrix}
 	V_2
 	\end {bmatrix} =
 	\begin {bmatrix}
-	Z_{11} & Z_{12} \\
-	Z_{21} & Z_{22}
+	Z_{11} & B \\
+	Z_{21} & D
 	\end {bmatrix} * 
 	\begin {bmatrix}
 	I_1 \\
@@ -24,53 +24,53 @@ $$ \begin {bmatrix}
 	\end {bmatrix} $$
 	
 									
-$$ where \ Y_{11} = \frac {I_1 / V_1}{V_2 = 0}  \ \ \  Y_{21} = \frac {I_2/V_1}{V_2 = 0} \  and $$
-
+$$ where \ Z_{11} = ( \frac{V_1}{I_I})_{I_2 = 0} \ \ \  Z_{12} = ( \frac {V_1}{I_2})_{I_1 = 0}  $$
 	
-$$ Y_{12} = \frac {I_1 / V_2}{V_1 = 0}  \ \ \  Y_{22} = \frac {I_2/V_2}{V_1 = 0} $$
+$$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 = 0} $$
 
 
 Similarly, current I<sub>1</sub>, I<sub>2</sub> can be expressed in terms of voltage V<sub>1</sub> and V<sub>2</sub> using Y parameters.
 
 
 $$ \begin {bmatrix}
-	I_1 \\
-	I_2
+	V_1 \\
+	I_1
 	\end {bmatrix} =
 	\begin {bmatrix}
-	Y_{11} & Y_{12} \\
-	Y_{21} & Y_{22}
-	\end {bmatrix} *
+	A & B \\
+	C & D
+	\end {bmatrix} * 
 	\begin {bmatrix}
-	V_1 \\
-	V_2
+	V_2 \\
+	-I_2
 	\end {bmatrix} $$
-
-$$ where \ Y_{11} = \frac {I_1 / V_1}{V_2 = 0}  \ \ \  Y_{21} = \frac {I_2/V_1}{V_2 = 0} \  and $$
-
 	
-$$ Y_{12} = \frac {I_1 / V_2}{V_1 = 0}  \ \ \  Y_{22} = \frac {I_2/V_2}{V_1 = 0} $$
+									
+$$ where \ A = ( \frac{V_1}{V_2})_{I_2 = 0} \ \ \  -B = ( \frac {V_1}{I_2})_{V_2 = 0}  $$
+	
+$$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 = 0} $$
 
 
 Similarly,  voltage V<sub>1</sub> and current I<sub>2</sub> can be expressed in terms of current I<sub>1</sub> and voltage V<sub>2</sub> using h parameters as below.
 								
+
 $$ \begin {bmatrix}
 	V_1 \\
-	I_2
+	I_1
 	\end {bmatrix} =
 	\begin {bmatrix}
-	h_{11} & h_{12} \\
-	h_{21} & h_{22}
-	\end {bmatrix} *
+	A & B \\
+	C & D
+	\end {bmatrix} * 
 	\begin {bmatrix}
-	I_1 \\
-	V_2
-	\end {bmatrix} $$					
-									 
-
-$$ where \ h_{11} = \frac {V_1/I_1}{V_2 = 0} \ \ \ h_{21} = \frac {I_2/I_1}{V_2 = 0} \ and $$
-
-$$ h_{12} = \frac {V_1/V_2}{I_1 = 0} \ \ \ h_{22} = \frac {I_2/V_2}{I_1 = 0} $$
+	V_2 \\
+	-I_2
+	\end {bmatrix} $$
+	
+									
+$$ where \ A = ( \frac{V_1}{V_2})_{I_2 = 0} \ \ \  -B = ( \frac {V_1}{I_2})_{V_2 = 0}  $$
+	
+$$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 = 0} $$
 
 									
 										
@@ -100,7 +100,7 @@ $$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 =
 <br>									
 <p>Circuit diagram for cascading mode is shown in figure 2.</p>
 <div align="center">
-<img src="images/tp main 2.JPG" /> <br>
+<img src="images/tp main 2.JPG" /> 
 	
 ***Fig.2 : Circuit Diagram for Cascading Mode***
 </div>
