@@ -13,7 +13,7 @@
 $$ \begin {bmatrix}
 	V_1 \\
 	V_2
-	\end {bmatrix} = 
+	\end {bmatrix} =
 	\begin {bmatrix}
 	Z_{11} & Z_{12} \\
 	Z_{21} & Z_{22}
@@ -22,10 +22,12 @@ $$ \begin {bmatrix}
 	I_1 \\
 	I_2
 	\end {bmatrix} $$
+	
+									
+$$ where \ Z_{11} = (\frac {V_1}{I_1})_{I_2 = 0} \ \ \ Z_{12} = (\frac {V_1}{I_2})_{I_1 = 0} $$
 
-$$ where \ Z_{11} = (\frac {V_1}{I_1})_{I_2 = 0} \ \ \ Z_{12} = (\frac {V_1}{I_2})_{I_1 = 0}  $$
-
-$$  Z_{21} = (\frac {V_2}{I_1})_{I_2 = 0} \ \ \ \ and \  Z_{22} = (\frac {V_2}{I_2})_{I_1 = 0}  $$									
+	
+$$ Z_{21} = (\frac {V_2}{I_1})_{I_2 = 0} \ \ \ \ and \  Z_{22} = (\frac {V_2}{I_2})_{I_1 = 0} $$ 									
 
 Similarly, current I<sub>1</sub>, I<sub>2</sub> can be expressed in terms of voltage V<sub>1</sub> and V<sub>2</sub> using Y parameters.
 
@@ -97,7 +99,7 @@ $$ -B = (V_1/I_2)_(V_2 = 0) \ \ \ -D = (I_1/I_2)_(V_2 = 0) $$
 <br>									
 <p>Circuit diagram for cascading mode is shown in figure 2.</p>
 <div align="center">
-<img src="images/tp main 2.JPG" />
+<img src="images/tp main 2.JPG" /> <br>
 	
 ***Fig.2 : Circuit Diagram for Cascading Mode***
 </div>
