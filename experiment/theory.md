@@ -8,30 +8,9 @@
 ***Fig.1 : Circuit diagram***
 </div>
 	<br>
-<p>The Voltage V<sub>1</sub>, V<sub>2</sub> and current I<sub>1</sub>, I<sub>2</sub> can be related in terms of Z-parameters as shown below.</p>
-
-$$ \begin {bmatrix}
-	V_1 \\
-	V_2
-	\end {bmatrix} =
-	\begin {bmatrix}
-	Z_{11} & B \\
-	Z_{21} & D
-	\end {bmatrix} * 
-	\begin {bmatrix}
-	I_1 \\
-	I_2
-	\end {bmatrix} $$
-	
+<p>Lastly, voltage V<sub>1</sub> and current `I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
 									
-$$ where \ Z_{11} = ( \frac{V_1}{I_I})_{I_2 = 0} \ \ \  Z_{12} = ( \frac {V_1}{I_2})_{I_1 = 0}  $$
-	
-$$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 = 0} $$
-
-
-Similarly, current I<sub>1</sub>, I<sub>2</sub> can be expressed in terms of voltage V<sub>1</sub> and V<sub>2</sub> using Y parameters.
-
-
+									
 $$ \begin {bmatrix}
 	V_1 \\
 	I_1
@@ -51,9 +30,31 @@ $$ where \ A = ( \frac{V_1}{V_2})_{I_2 = 0} \ \ \  -B = ( \frac {V_1}{I_2})_{V_2
 $$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 = 0} $$
 
 
-Similarly,  voltage V<sub>1</sub> and current I<sub>2</sub> can be expressed in terms of current I<sub>1</sub> and voltage V<sub>2</sub> using h parameters as below.
-								
+<p>Lastly, voltage V<sub>1</sub> and current `I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
+									
+									
+$$ \begin {bmatrix}
+	V_1 \\
+	I_1
+	\end {bmatrix} =
+	\begin {bmatrix}
+	A & B \\
+	C & D
+	\end {bmatrix} * 
+	\begin {bmatrix}
+	V_2 \\
+	-I_2
+	\end {bmatrix} $$
+	
+									
+$$ where \ A = ( \frac{V_1}{V_2})_{I_2 = 0} \ \ \  -B = ( \frac {V_1}{I_2})_{V_2 = 0}  $$
+	
+$$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 = 0} $$
 
+
+<p>Lastly, voltage V<sub>1</sub> and current `I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
+									
+									
 $$ \begin {bmatrix}
 	V_1 \\
 	I_1
@@ -74,7 +75,7 @@ $$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 =
 
 									
 										
-<p>Lastly, voltage V<sub>1</sub> and current `I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
+<p>Lastly, voltage V<sub>1</sub> and current I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.</p>
 									
 									
 $$ \begin {bmatrix}
