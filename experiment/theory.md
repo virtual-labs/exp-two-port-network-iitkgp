@@ -101,8 +101,7 @@ $$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 =
 <br>									
 <p>Circuit diagram for cascading mode is shown in figure 2.</p>
 <div align="center">
-<img src="images/tp main 2.JPG" /> 
-	
+<img src="images/tp main 2.JPG" /><br>	
 ***Fig.2 : Circuit Diagram for Cascading Mode***
 </div>
 <br>	
