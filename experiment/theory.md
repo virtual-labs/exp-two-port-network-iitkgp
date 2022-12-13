@@ -10,6 +10,7 @@
 	<br>
 <p>The Voltage V<sub>1</sub>, V<sub>2</sub> and current I<sub>1</sub>, I<sub>2</sub> can be related in terms of Z-parameters as shown below.</p>
 
+
 $$ \begin {bmatrix}
 	V_1 \\
 	V_2
@@ -21,15 +22,16 @@ $$ \begin {bmatrix}
 	\begin {bmatrix}
 	I_1 \\
 	I_2
-	\end {bmatrix} $$
-										
-									
+	\end {bmatrix} $$									
+
+
 $$ where \ Z_{11} = (V_1/I_1)_(I_2 = 0) \ \ \ Z_{21} = (V_2/I_1)_(I_2 = 0) \ and $$
 										
 $$ Z_{12} = (V_1/I_2)_(I_1 = 0) \ \ \ Z_{22} = (V_2/I_2)_(I_1 = 0) $$
 										
 
 Similarly, current I<sub>1</sub>, I<sub>2</sub> can be expressed in terms of voltage V<sub>1</sub> and V<sub>2</sub> using Y parameters.
+
 
 $$ \begin {bmatrix}
 	I_1 \\
@@ -43,7 +45,6 @@ $$ \begin {bmatrix}
 	V_1 \\
 	V_2
 	\end {bmatrix} $$
-
 
 $$ where \ Y_{11} = \frac {I_1 / V_1}{V_2 = 0}  \ \ \  Y_{21} = \frac {I_2/V_1}{V_2 = 0} \  and $$
 
