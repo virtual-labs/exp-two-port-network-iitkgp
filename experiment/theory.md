@@ -91,9 +91,9 @@ $$ \begin {bmatrix}
 	\end {bmatrix} $$
 	
 									
-$$ where \ A = (V_1/V_2)_(I_2 = 0) \ \ \ C = (I_1/V_2)_(I_2 = 0) \ and $$
+$$ where \ A = ( \frac{V_1}{V_2})_{I_2 = 0} \ \ \  -B = ( \frac {V_1}{I_2})_{V_2 = 0}  $$
 	
-$$ -B = (V_1/I_2)_(V_2 = 0) \ \ \ -D = (I_1/I_2)_(V_2 = 0) $$ 
+$$ C = ( \frac {I_1}{V_2})_{I_2 = 0} \ \ \ \ and -D = ( \frac {I_1}{I_2})_{V_2 = 0} $$
 	
 									
 <span style="background-color: rgb(255, 255, 255); font-size: 21px; "><b>Cascading Mode Circuit Diagram:</b></span>
