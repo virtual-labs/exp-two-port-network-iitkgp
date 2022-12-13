@@ -10,7 +10,18 @@
 	<br>
 <p>The Voltage V<sub>1</sub>, V<sub>2</sub> and current I<sub>1</sub>, I<sub>2</sub> can be related in terms of Z-parameters as shown below.</p>
 															
-$$ [[V_1], [V_2]] = [[Z_{11}, Z_{12}], [Z_{21}, Z_{22}]] * [[I_1] , [I_2] \ where $$
+$$ \begin {bmatrix}
+	V_1 \\
+	V_2
+	\end {bmatrix} =
+	\begin {bmatrix}
+	Z_{11} & Z_{12} \\
+	Z_{21} & Z_{22}
+	\end {bmatrix} * 
+	\begin {bmatrix}
+	I_1 \\
+	I_2
+	\end {bmatrix} $$
 										
 									
 $$ Z_{11} = (V_1/I_1)_(I_2 = 0) \ \ \ Z_{21} = (V_2/I_1)_(I_2 = 0) \ and $$
