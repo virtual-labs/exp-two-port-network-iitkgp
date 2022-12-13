@@ -9,7 +9,7 @@
 </div>
 	<br>
 <p>The Voltage V<sub>1</sub>, V<sub>2</sub> and current I<sub>1</sub>, I<sub>2</sub> can be related in terms of Z-parameters as shown below.</p>
-															
+
 $$ \begin {bmatrix}
 	V_1 \\
 	V_2
@@ -24,14 +24,13 @@ $$ \begin {bmatrix}
 	\end {bmatrix} $$
 										
 									
-$$ Z_{11} = (V_1/I_1)_(I_2 = 0) \ \ \ Z_{21} = (V_2/I_1)_(I_2 = 0) \ and $$
+$$ where \ Z_{11} = (V_1/I_1)_(I_2 = 0) \ \ \ Z_{21} = (V_2/I_1)_(I_2 = 0) \ and $$
 										
 $$ Z_{12} = (V_1/I_2)_(I_1 = 0) \ \ \ Z_{22} = (V_2/I_2)_(I_1 = 0) $$
 										
 
 Similarly, current I<sub>1</sub>, I<sub>2</sub> can be expressed in terms of voltage V<sub>1</sub> and V<sub>2</sub> using Y parameters.
-									
-										
+
 $$ \begin {bmatrix}
 	I_1 \\
 	I_2
@@ -39,21 +38,21 @@ $$ \begin {bmatrix}
 	\begin {bmatrix}
 	Y_{11} & Y_{12} \\
 	Y_{21} & Y_{22}
-	\end {bmatrix} * 
+	\end {bmatrix} *
 	\begin {bmatrix}
 	V_1 \\
 	V_2
 	\end {bmatrix} $$
 
 
-$$ Y_{11} = \frac {I_1 / V_1}{V_2 = 0}  \ \ \  Y_{21} = \frac {I_2/V_1}{V_2 = 0} \  and $$
+$$ where \ Y_{11} = \frac {I_1 / V_1}{V_2 = 0}  \ \ \  Y_{21} = \frac {I_2/V_1}{V_2 = 0} \  and $$
 
 	
 $$ Y_{12} = \frac {I_1 / V_2}{V_1 = 0}  \ \ \  Y_{22} = \frac {I_2/V_2}{V_1 = 0} $$
 
 
 Similarly,  voltage V<sub>1</sub> and current I<sub>2</sub> can be expressed in terms of current I<sub>1</sub> and voltage V<sub>2</sub> using h parameters as below.
-									
+								
 $$ \begin {bmatrix}
 	V_1 \\
 	I_2
@@ -61,14 +60,14 @@ $$ \begin {bmatrix}
 	\begin {bmatrix}
 	h_{11} & h_{12} \\
 	h_{21} & h_{22}
-	\end {bmatrix} * 
+	\end {bmatrix} *
 	\begin {bmatrix}
 	I_1 \\
 	V_2
-	\end {bmatrix} $$
-									
+	\end {bmatrix} $$					
 									 
-$$ h_{11} = \frac {V_1/I_1}{V_2 = 0} \ \ \ h_{21} = \frac {I_2/I_1}{V_2 = 0} \ and $$
+
+$$ where \ h_{11} = \frac {V_1/I_1}{V_2 = 0} \ \ \ h_{21} = \frac {I_2/I_1}{V_2 = 0} \ and $$
 
 $$ h_{12} = \frac {V_1/V_2}{I_1 = 0} \ \ \ h_{22} = \frac {I_2/V_2}{I_1 = 0} $$
 
@@ -91,7 +90,7 @@ $$ \begin {bmatrix}
 	\end {bmatrix} $$
 	
 									
-$$A = (V_1/V_2)_(I_2 = 0) \ \ \ C = (I_1/V_2)_(I_2 = 0) \ and $$
+$$ where \ A = (V_1/V_2)_(I_2 = 0) \ \ \ C = (I_1/V_2)_(I_2 = 0) \ and $$
 	
 $$ -B = (V_1/I_2)_(V_2 = 0) \ \ \ -D = (I_1/I_2)_(V_2 = 0) $$ 
 	
