@@ -24,10 +24,13 @@ $$ \begin {bmatrix}
 	\end {bmatrix} $$
 	
 where,
+
 	
-$$Z_{11} = (\frac{V_1}{I_1})_{I_2 = 0} Z_{12} = (\frac {V_1}{I_2})_{I_1 = 0}$$
+$$ Z_{11} = (\frac{V_1}{I_1})_{I_2 = 0} Z_{12} = (\frac {V_1}{I_2})_{I_1 = 0} $$
+
 	
-$$Z = (\frac {V_2}{I_1})_{I_2 = 0}  Z_{22} = (\frac {V_2}{I_2})_{I_1 = 0}$$
+$$ Z = (\frac {V_2}{I_1})_{I_2 = 0}  Z_{22} = (\frac {V_2}{I_2})_{I_1 = 0} $$
+
 
 Similarly, current I<sub>1</sub> and I<sub>2</sub> can be expressed in terms of volatge V<sub>1</sub> and V<sub>2</sub> using Y parameters.
 
@@ -46,11 +49,14 @@ $$\begin{gather}
 	\end {bmatrix}
 	\end{gather}$$
 	
-where
+where,
+
 	
 $$Y_{11} = (\frac{I_1}{V_1})_{V_2 = 0} Y_{12} = (\frac {I_2}{V_2})_{V_1 = 0}$$
+
 	
 $$Y_{21} = (\frac {I_2}{V_1})_{V_2 = 0} Y_{22} = ( \frac {I_2}{V_2})_{V_1 = 0}$$
+
 
 Similarly, voltage V<sub>1</sub> and current I<sub>2</sub> can be expressed in terms of current I<sub>1</sub> and voltage V<sub>2</sub> using h parameters as below.
 
@@ -70,10 +76,13 @@ $$\begin{gather}
 	\end{gather}$$
 	
 where,
+
 	
 $$h_{11} = (\frac{V_1}{I_1})_{V_2 = 0} h_{12} = (\frac {V_1}{V_2})_{I_1 = 0}$$
+
 	
 $$h_{21} = (\frac {I_2}{I_1})_{V_2 = 0} h_{22} = (\frac {I_2}{V_2})_{I_1 = 0}$$
+
 
 Lastly, voltage V<sub>1</sub> and current I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.
 
@@ -93,10 +102,13 @@ $$\begin{gather}
 	\end{gather}$$
 	
 where,
+
 	
 $$A = (\frac{V_1}{V_2})_{I_2 = 0} -B = (\frac {V_1}{I_2})_{V_2 = 0}$$
+
 	
-$$C = (\frac {I_1}{V_2})_{I_2 = 0} -D = (\frac {I_1}{I_2})_{V_2 = 0}$$	
+$$C = (\frac {I_1}{V_2})_{I_2 = 0} -D = (\frac {I_1}{I_2})_{V_2 = 0}$$
+
 									
 ***Cascading Mode Circuit Diagram:***
 
