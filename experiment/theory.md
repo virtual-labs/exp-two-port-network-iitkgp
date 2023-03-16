@@ -124,4 +124,5 @@ If two networks M and N connected in cascade then the total transmission matrix 
 
 $$T = T_M * T_N$$
 
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>					
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>				
