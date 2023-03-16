@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-<img alt="" src="images/tp8.jpg" style="width:50%; height:50%;">
+<img alt="" src="images/tp 8.JPG" style="width:50%; height:50%;">
 	
 [Fig 2: Circuit Diagram for N network]
 </div>
