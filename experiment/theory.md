@@ -10,20 +10,18 @@
 
 The voltage V<sub>1</sub>, V<sub>2</sub>  and current I<sub>1</sub>, I<sub>2</sub> can be related in terms of Z-parameters as shown below.
 
-$$\begin{gather}
-\begin {bmatrix}
+$$ \begin {bmatrix}
 	V_1 \\
 	V_2
-	\end {bmatrix} =	
+	\end {bmatrix} =
 	\begin {bmatrix}
 	Z_{11} & Z_{12} \\
 	Z_{21} & Z_{22}
-	\end {bmatrix}*
+	\end {bmatrix} * 
 	\begin {bmatrix}
 	I_1 \\
 	I_2
-	\end{bmatrix}
-	\end{gather}$$
+	\end {bmatrix} $$
 	
 where,
 	
