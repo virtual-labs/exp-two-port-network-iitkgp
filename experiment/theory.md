@@ -27,7 +27,7 @@ I_2
 
 where,
 
-$$ Z_{11} = (\\frac {V_1} {I_1} )_{I_2 = 0} Z_{12} = ( \\frac {V_1} {I_2} )_{I_1 = 0} $$
+$$ Z_{11} = \( \\frac {V_1} {I_1} \)_{ I_2 = 0 } Z_{12} = ( \\frac {V_1} {I_2} )_{I_1 = 0} $$
 
 $$Z = (\frac {V_2}{I_1})_{I_2 = 0}  Z_{22} = (\frac {V_2}{I_2})_{I_1 = 0}$$
 
@@ -35,15 +35,15 @@ Similarly, current I<sub>1</sub> and I<sub>2</sub> can be expressed in terms of 
 
 $$\begin{gather}
 \begin {bmatrix}
-I_1 \\
+I_1 \\\\
 I_2
 \end {bmatrix} =
 \begin {bmatrix}
-Y_{11} & Y_{12} \\
+Y_{11} & Y_{12} \\\\
 Y_{21} & Y_{22}
 \end {bmatrix} * 
 \begin {bmatrix}
-V_1 \\
+V_1 \\\\
 V_2
 \end {bmatrix}
 \end{gather}$$
