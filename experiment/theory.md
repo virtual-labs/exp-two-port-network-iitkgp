@@ -16,7 +16,7 @@ V_1 \\
 V_2
 \end {bmatrix} =
 \begin {bmatrix}
-Z_{11} & Z_{12} \\
+Z_{11} & Z_{12} \\\
 Z_{21} & Z_{22}
 \end {bmatrix}*
 \begin {bmatrix}
