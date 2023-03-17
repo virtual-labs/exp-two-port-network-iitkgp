@@ -20,4 +20,5 @@
 
 SrNo | Name | VLabs Developer or Integration Engineer | Designation | Department| Institute
 :--|:--|:--|:--|:--|:--|
-1 | **Piyali Chattopadhyay** | Developer & Integration | Research Engineer | Department of Electrical Engineering | IIT Kharagpur | 
+1 | **Piyali Chattopadhyay** | Developer & Integration | Research Engineer | Department of Electrical Engineering | IIT Kharagpur |
+2 | **Subhasis Mahata** |  AWS Integration Engineer  | Senior Project Scientist | Department of Mechanical Engineering | IIT Kharagpur |
