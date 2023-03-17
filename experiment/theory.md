@@ -77,9 +77,9 @@ V_2
 
 where,
 
-$$ h_{11} = \( \\frac \{ v_1 \} \{ I_1 \} \)\_\{ v_2 = 0 \} \\quad h_{12} = \( \\frac \{ V_1 \} \{ V_2 \} \) \_ \{ V_1 = 0\} $$
+$$ h_{11} = \( \\frac \{ v_1 \} \{ I_1 \} \)\_\{ v_2 = 0 \} \\quad h_{12} = \( \\frac \{ V_1 \} \{ V_2 \} \) \_ \{ I_1 = 0\} $$
 
-$$ h_{21} = \( \\frac \{ I_2 \} \{ I_1 \} \)\_\{ v_2 = 0 \} \\quad h_{22} = \( \\frac \{ I_2 \} \{ V_2 \} \) \_ \{ V_1 = 0\} $$
+$$ h_{21} = \( \\frac \{ I_2 \} \{ I_1 \} \)\_\{ v_2 = 0 \} \\quad h_{22} = \( \\frac \{ I_2 \} \{ V_2 \} \) \_ \{ I_1 = 0\} $$
 
 
 Lastly, voltage V<sub>1</sub> and current I<sub>1</sub> can be expressed in terms of volatge V<sub>2</sub> and current (-I<sub>2</sub>) using ABCD parameters.
