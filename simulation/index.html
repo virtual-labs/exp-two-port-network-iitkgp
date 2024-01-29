@@ -1,0 +1,789 @@
+<html>
+<head>
+<!--<a href="./thevenin_website.html" target="popup" onclick="window.open('./thevenin_website.html','name','width=1350,height=675')">Open page in new window</a>
+-->
+
+
+<link rel="stylesheet" type="text/css" href="css/exp4_css.css">
+</head>
+
+<body  id="container"  background="./images/pg_bg.gif"> 
+<script src="js/extreme new.js"></script>
+<div id="whole_body" style=" position:relative; margin-left:auto; margin-right:auto; top:0px; width:1160px; height:1160px">
+<div style="font-size:40px; text-align:center; height:100px"> <b>Determination of different parameters of Two Port Network and Verification of their Interrelations </b></div>
+<div id="description" style="background-color:#BADF6C; border-radius:10px; border:2px solid #8AC007; position:absolute; align:left; left:-25px; width:415px">
+<div style="margin-left:5px; margin-right:5px;margin-top:5px;margin-bottom:5px ">
+	<h3 style="text-align:center"><u> Procedure:</u> </h3>
+	<ol>
+	<li> Enter the supply voltage and frequency.</li>
+
+	<li> Enter the values of R,L,C (in M/N network).</li>
+
+	<li> Select the desired network by choosing the corresponding tab( M/ N/ MN )tabs. </li>
+
+	<li> Under "Controls" Choose the desired network parameter (Z / Y / h / ABCD) in "Parameter Select". </li>
+
+	</div>
+
+</div>
+
+
+ 
+
+	<div id="Zpro1"  style="display:none; padding-right:7px; padding-left:10px;padding-bottom:10px; background-color:#DAEE88; border-radius:10px; border:3px solid #090908; position:absolute;right:755px; top:290px; align:center; height:280px; width:420px">	
+		<p style="text-align:center"><b > Z parameter	</b></p>
+		      <p style="text-align:center">  Under 'Controls' choose Case1/Case2.</p>
+	   <p> <b> Case 1:  Obtaining the values of Z<sub>11</sub> and Z<sub>21</sub> </b><br/>
+		              i)Apply Power to Input port and set Output port to Intermediate.	<br/>
+		             ii)Switch on the supply and click on "Simulate" button.</br>
+					iii)Observe the result Z<sub>11</sub>=V<sub>1</sub>/I<sub>1</sub> and Z<sub>21</sub>=V<sub>2</sub>/I<sub>1</sub> when I<sub>2</sub>=0.
+		          iv)Switch off the supply.</br>
+		<b> Case 2: Obtaining the values of Z<sub>12</sub> and Z<sub>22</sub></b><br/>
+		              i) Apply Power to Output port and set Input port to Intermediate<br/>
+		             ii)Switch on the supply and click on "Simulate" button</br>
+					iii)Observe the result Z<sub>12</sub>=V<sub>1</sub>/I<sub>2</sub> and Z<sub>22</sub>=V<sub>2</sub>/I<sub>2</sub> when I<sub>1</sub>=0
+                     iv)Switch off the supply.</p>					
+		</div>	
+
+ <div id="Ypro1"   style="display:none; padding-right:7px; padding-left:10px;padding-bottom:10px; background-color:#FBC1C0 ; border-radius:10px; border:3px solid #090908; position:absolute;right:755px; top:290px; align:center; height:280px; width:420px">	
+		<p style="text-align:center"><b > Y parameter	</b></p>
+		<p style="text-align:center">  Under 'Controls' choose Case1/Case2.</p>
+		<p><b> Case 1:  Obtaining the values of Y<sub>11</sub> and Y<sub>21</sub> </b><br/>
+		              i)Apply Power to Input port and set Output port to short circuit.	<br/>
+		             ii)Switch on the supply and click on "Simulate" button.</br>
+					iii)Observe the result Y<sub>11</sub>=I<sub>1</sub>/V<sub>1</sub> and Y<sub>21</sub>=I<sub>2</sub>/V<sub>1</sub> when V<sub>2</sub>=0.
+		             iv)Switch off the supply.</br>
+					 
+		<b> Case 2: Obtaining the values of Y<sub>12</sub> and Y<sub>22</sub></b>	<br/>
+		              i)Apply Power to Output port and set Input port to short circuit .</br>
+		             ii)Switch on the supply and click on "Simulate" button.</br>
+					iii)Observe the result Y<sub>12</sub>=I<sub>1</sub>/V<sub>2</sub> and Y<sub>22</sub>=I<sub>2</sub>/V<sub>2</sub> when V<sub>1</sub>=0
+					 iv)Switch off the supply.</p>
+		</div>	
+
+ <div id="hpro1"  style="display:none; padding-right:7px; padding-left:10px;padding-bottom:10px; background-color:#7AE6F1 ; border-radius:10px; border:3px solid #090908; position:absolute;right:755px;  top:290px; align:center; height:280px; width:420px">	
+		<p style="text-align:center"><b > h parameter	</b></p>
+		<p style="text-align:center">  Under 'Controls' choose Case1/Case2.</p>	
+		<p><b> Case 1:  Obtaining the values of h<sub>11</sub> and h<sub>21</sub> </b><br/>	
+		             i)Apply Power to Input port and set Output port to short circuit .<br/>
+		            ii)Switch on the supply and click on "Simulate" button.</br>
+				   iii)Observe the result h<sub>11</sub>=V<sub>1</sub>/I<sub>1</sub> and h<sub>21</sub>=I<sub>2</sub>/I<sub>1</sub> when V<sub>2</sub>=0.
+					iv)Switch off the supply.</br>
+		<b> Case 2: Obtaining the values of h<sub>12</sub> and h<sub>22</sub> .</b>	<br/>	
+		             i)Apply Power to Output port and set Input port to Intermediate.</br>
+		            ii)Switch on the supply and click on "Simulate" button.</br>
+				   iii)Observe the result h<sub>12</sub>=V<sub>1</sub>/V<sub>2</sub> and h<sub>22</sub>=I<sub>2</sub>/V<sub>2</sub> when I<sub>1</sub>=0 
+                    iv)Switch off the supply. </p>		
+		</div>	
+ 
+ 
+  <div id="Apro1" style="display:none; padding-right:7px; padding-left:10px;padding-bottom:10px; background-color:#C3BBF6; border-radius:10px; border:3px solid #090908; position:absolute;right:755px; top:290px; align:center; height:270px; width:420px">	
+		<p style="text-align:center"><b > ABCD parameter	</b></p>
+		<p style="text-align:center">  Under 'Controls' choose Case1/Case2.</p>	
+		<p><b> Case 1:  Obtaining the values of A and C </b><br/>		
+		             i)Apply Power to Input port and set Output port to Intermediate.	<br/>
+		            ii)Switch on the supply and click on "Simulate" button.</br>
+				   iii)Observe the result A=V<sub>1</sub>/V<sub>2</sub> and C=I<sub>1</sub>/V<sub>2</sub> when I<sub>2</sub>=0.	
+					iv)Switch off the supply.</br>
+					
+					<b> Case 2: Obtaining the values of B and D </b>	<br/>	
+		             i)Apply Power to Input port and set Output port to Short.</br>
+					ii)Switch on the supply and click on "Simulate" button.</br>
+				   iii)Observe the result B=V<sub>1</sub>/I<sub>2</sub> and D=I<sub>1</sub>/I<sub>2</sub> when V<sub>2</sub>=0 </br>
+				    iv)Switch off the supply.</p>		
+		</div>	
+ 
+ 
+ <form name='f1'>
+<div id="main_circuit" style="position:relative; left:0px">
+	<img src="images/ckt.jpg" alt="Tutorials Point" style="position:absolute; top:0px;  right:0px; border: 2px solid #3DC4F5; border-radius: 10px"/>
+	
+	
+	<p style="text-align:center; position:absolute; left:405px; width:100px; top:85px">Vin <br>(in Volt)</p>
+	<input type="number" name="vin" value="110" id="vin" style="cursor: pointer; position:absolute; top:135px;  left:435px; width:50px"> 
+	<p style="text-align:center; position:absolute; left:414px; width:80px; top:144px">Frequency (in Hz)</p>
+	<input type="number" name="f" value="50" id="f" min="0" max="50" style="cursor: pointer; position:absolute; top:200px;  left:435px; width:40px">
+	
+	<input type="number" name="r1" value="100" id="r1" style="position:absolute; top:65px;  right:618px; width:50px">
+	<input type="number" name="r2" value="200" id="r2" style="position:absolute; top:65px;  right:515px; width:50px">
+	<input type="number" name="r3" value="100" id="r3" style="position:absolute; top:127px;  right:609px; width:50px">
+	<input type="number" name="r4" value="150" id="r4" style="position:absolute; top:149px;  right:485px; width:50px">
+	<input type="number" name="r5" value="200" id="r5" style="position:absolute; top:172px;  right:338px; width:50px">
+	<input type="number" name="r6" value="100" id="r6" style="position:absolute; top:245px;  right:508px; width:50px">
+	
+	<input type="number" name="c1" value="0.0001" id="c1" style="position:absolute; top:24px;  right:151px; width:65px">
+	<input type="number" name="l1" value="0.001" id="l1" style="position:absolute; top:141px;  right:66px; width:60px">
+	<input type="number" name="l2" value="0.002" id="l2" style="position:absolute; top:24px;  right:63px; width:60px">
+</div>
+
+
+<ul class="tabs" style="position:absolute; top:525px;  right:0px; ">
+        <li>
+          <input type="radio" checked name="tabs" id="tab1">
+          <label for="tab1">M Network</label>
+          <div id="tab-content1" class="tab-content animated fadeIn" >
+			<u>Determination of 2-port network parameters for M Network:</u><br>
+			<img src="images/M_net.jpg" align="middle" style="position:absolute; top:38px; left:515px; display: block; height:52%; border: 2px solid #3DC4F5; border-radius: 10px;">
+			
+			<img id="myImage" onclick="changeImage()" src="./images/s1.png" style="display:none; cursor: pointer; position:absolute; height:50px; width:50px; top:160px;  right:595px;"/>
+			<img id="2ndImage" onclick="changeImage()" src="./images/s1.png" style="display:none; cursor: pointer; position:absolute; height:50px; width:50px; top:155px;  right:-15px;"/>
+			
+         	   <img id="image" src="images/RunoffPower.png"  style="display:none; position:absolute; top:63px;  right:470px"/>
+               <img id="Rimage" src="images/RunoffPower2.png"  style="display:none; position:absolute; top:66px;  right:37px"/>
+               <img id="Line" src="images/Shortline (2).png"  style="display:none; position:absolute; top:83px;  right:520px"/>
+               <img id="RLine" src="images/Shortline (2) - Copy.png"  style="display:none; position:absolute; top:86px;  right:90px"/>
+			
+			<div id="Zparameter" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>Z parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="test"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			
+			
+			<input type="number" name="VA11" value="0" id="VA11" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AA11" value="0" id="AA11" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VA22" value="0" id="VA22" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AA22" value="0" id="AA22" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+			Z<sub>11</sub> = <input type="number" name="Z11A" value="0" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Z<sub>21</sub> = <input type="number" name="Z21A" value="0" id="Z21A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			Z<sub>12</sub> = <input type="number" name="Z12A" value="0" id="Z12A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Z<sub>22</sub> = <input type="number" name="Z22A" value="0" id="Z22A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			</div>
+			<div id="Z" style="display:none;text-align:center;position:relative; top:105px;left:550px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find Z<sub>11</sub>, Z<sub>21</sub> apply Power to Input port <br/>and set Output port to Intermediate.</p>
+			<p>Case 2: To find Z<sub>12</sub>, Z<sub>22</sub> apply Power to Output port <br/>and set Input port to Intermediate.</p></br>
+			</div>
+			
+	
+		<div id="Yparameter" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>Y parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="test"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+		
+
+		<input type="number" name="VA3" value="0" id="VA3" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AA3" value="0" id="AA3" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VA33" value="0" id="VA33" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AA33" value="0" id="AA33" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+			 Y<sub>11</sub> = <input type="number" name="Y11A" value="0" id="Y11A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Y<sub>21</sub> = <input type="number" name="Y21A" value="0" id="Y21A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			 Y<sub>12</sub> = <input type="number" name="Y12A" value="0" id="Y12A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Y<sub>22</sub> = <input type="number" name="Y22A" value="0" id="Y22A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			</div>
+			<div id="Y" style="display:none;text-align:center;position:relative; top:105px;left:550px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find Y<sub>11</sub>, Y<sub>21</sub> apply Power to Input port <br/>and set Output port to Short.</p>
+			<p>Case 2: To find Y<sub>12</sub>, Y<sub>22</sub> apply Power to Output port <br/>and set Input port to Short.</p></br>
+			</div>	
+		
+		<div id="hparameter" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>h parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="test"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			<input type="number" name="VA4" value="0" id="VA4" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AA4" value="0" id="AA4" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VA44" value="0" id="VA44" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AA44" value="0" id="AA44" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+		&nbsp; h<sub>11</sub> = <input type="number" name="h11A" value="0" id="h11A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>21</sub> = <input type="number" name="h21A" value="0" id="h21A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>12</sub> = <input type="number" name="h12A" value="0" id="h12A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>22</sub> = <input type="number" name="h22A" value="0" id="h22A" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+		</div>
+		<div id="H" style="display:none;text-align:center;position:relative; top:105px;left:550px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find h<sub>11</sub>, h<sub>21</sub> apply Power to Input port <br/>and set Output port to Short.</p>
+			<p>Case 2: To find h<sub>12</sub>, h<sub>22</sub> apply Power to Output port <br/>and set Input port to Intermediate.</p></br>
+			</div>	
+		
+			<div id="ABCD" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>ABCD parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="test"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			<input type="number" name="VA5" value="0" id="VA5" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AA5" value="0" id="AA5" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VA55" value="0" id="VA55" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AA55" value="0" id="AA55" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>	
+			&nbsp;&nbsp;&nbsp; A = <input type="number" name="AA" value="0" id="AA" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp;&nbsp; C = <input type="number" name="CA" value="0" id="CA" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp; B = <input type="number" name="BA" value="0" id="BA" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp;&nbsp; D = <input type="number" name="DA" value="0" id="DA" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			</div>
+			<div id="T" style="display:none;text-align:center;position:relative; top:105px;left:550px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find A, C apply Power to Input port <br/>and set Output port to Intermediate.</p>
+			<p>Case 2: To find B, D apply Power to Input port <br/>and set Output port to Short.</p>
+			</div>	
+			
+				<div style=" position:absolute; top:95px; left:82px; width:330px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+				<div style="text-align:center; "><b style="font-size:27px;">Controls</b><br>
+				Parameter Select: &nbsp
+				<select name="SW1A" id="SW1A"  onclick="showDiv(this)" style="cursor: pointer; background-color:#85D2EE; width:127px">
+						<option value="1"  SELECTED>Z parameter</option><option value="2">Y parameter</option><option value="3">h parameter</option>
+						<option value="4">ABCD parameter</option>
+				</select><br>
+				
+				<p style="text-align:center; position:absolute; left:90px; width:80px; top:38px">Case:</p>
+				<select name="SW4A" id="SW4A" style="cursor:pointer; background-color:#85D2EE; position:absolute; top:60px; left:190px ; width:100px">
+	<option value="1" SELECTED>Case 1</option><option value="2">Case 2</option></select>	
+				
+				<select name="SW2A" id="SW2A" onchange="showImg(this)" onfocus="this.selectedIndex = -1  " style="cursor:pointer; background-color:#85D2EE; position:absolute; top:-40px; left:392px ; width:100px">
+	<option value="1" SELECTED>Power</option><option value="2">Short</option><option value="3">Intermediate</option></select>
+	
+	<select name="SW3A" id="SW3A" onchange="showPic(this)"  onfocus="this.selectedIndex = -1  " style="cursor:pointer; background-color:#85D2EE; position:absolute; top:-35px;  left:880px; width:100px">
+	<option value="1" SELECTED>Power</option><option value="2">Short</option><option value="3">Intermediate</option></select>
+			
+				<input type="button" value="Simulate" onclick="simulateA()" style="text-align:center; cursor: pointer; background-color:#EA3753;border-radius:20px; width:130px; height:50px; font-size:20px; position:absolute; top:105px; right:100px;border-shadow:2px">
+			</div>
+			</div>
+			<script>
+			function showDiv(select){
+			if(select.value==1){
+    document.getElementById('Zparameter').style.display = "block";
+	document.getElementById('Z').style.display = "block";
+	document.getElementById('Zpro1').style.display = "block";
+}
+		else{
+
+    document.getElementById('Zparameter').style.display = "none";
+     document.getElementById('Z').style.display = "none";
+	 document.getElementById('Zpro1').style.display = "none"
+}
+           if(select.value==2){
+document.getElementById('Yparameter').style.display = "block";
+document.getElementById('Y').style.display = "block";
+document.getElementById('Ypro1').style.display = "block";
+}
+else{
+
+document.getElementById('Yparameter').style.display = "none";
+document.getElementById('Y').style.display = "none";
+document.getElementById('Ypro1').style.display = "none";
+}
+  if(select.value==3){
+document.getElementById('hparameter').style.display = "block";
+document.getElementById('H').style.display = "block";
+document.getElementById('hpro1').style.display = "block";
+}
+else{
+
+document.getElementById('hparameter').style.display = "none";
+document.getElementById('H').style.display = "none";
+document.getElementById('hpro1').style.display = "none";
+}
+
+if(select.value==4){
+document.getElementById('ABCD').style.display = "block";
+document.getElementById('T').style.display = "block";
+document.getElementById('Apro1').style.display = "block";
+}
+else{
+document.getElementById('ABCD').style.display = "none";
+document.getElementById('T').style.display = "none";
+document.getElementById('Apro1').style.display = "none";
+}
+
+}
+
+function showImg(select) {
+if(select.value==1){
+document.getElementById('image').style.display="block";
+document.getElementById('myImage').style.display="block";
+}
+else{
+document.getElementById('image').style.display="none";
+document.getElementById('myImage').style.display="none";
+}
+if (select.value==2) {
+document.getElementById('Line').style.display="block";
+}
+else{
+document.getElementById('Line').style.display="none";
+}
+}
+
+
+
+function showPic(select) {
+if(select.value==1){
+document.getElementById('Rimage').style.display="block";
+document.getElementById('2ndImage').style.display="block";
+}
+else{
+document.getElementById('Rimage').style.display="none";
+document.getElementById('2ndImage').style.display="none";
+}
+if (select.value==2) {
+document.getElementById('RLine').style.display="block";
+}
+else{
+document.getElementById('RLine').style.display="none";
+}
+}
+</script>
+</div>	
+</li>
+<!---------------------------------------------------------- N Network---------------------------------------------------------->
+ <li>
+          <input type="radio" name="tabs" id="tab2">
+          <label for="tab2">N Network</label>
+          <div id="tab-content2" class="tab-content animated fadeIn">
+			<u>Determination of 2-port network parameters for N Network:</u><br>
+			<img src="images/N_net.jpg" align="middle" style="position:absolute; top:48px; left:525px;height:200px; display: block; height:49%; border: 2px solid #3DC4F5; border-radius: 10px;">
+
+	<img id="myImage2" onclick="changeImage()" src="./images/s1.png" style="display:none; cursor: pointer; position:absolute; height:50px; width:50px; top:160px;  right:595px;"/>
+			<img id="2ndImage2" onclick="changeImage()" src="./images/s1.png" style="display:none; cursor: pointer; position:absolute; height:50px; width:50px; top:155px;  right:15px;"/>
+			
+         	   <img id="image2" src="images/NPLeft.png"  style="display:none; position:absolute; top:93px;  right:460px"/>
+               <img id="Rimage2" src="images/NPRight.png"  style="display:none; position:absolute; top:93px;  right:100px"/>
+               <img id="Line2" src="images/Shortline (2).png"  style="display:none; position:absolute; top:110px;  right:483px"/>
+               <img id="RLine2" src="images/Shortline (2) - Copy.png"  style="display:none; position:absolute; top:110px;  right:175px"/>
+			
+			<div id="Zparameter2" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>Z parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="text"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			
+			
+			<input type="number" name="VB11" value="0" id="VB11" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AB11" value="0" id="AB11" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VB22" value="0" id="VB22" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AB22" value="0" id="AB22" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+			Z<sub>11</sub> = <input type="number" name="Z11B" value="0" id="Z11B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Z<sub>21</sub> = <input type="number" name="Z21B" value="0" id="Z21B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			Z<sub>12</sub> = <input type="number" name="Z12B" value="0" id="Z12B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Z<sub>22</sub> = <input type="number" name="Z22B" value="0" id="Z22B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			</div>
+			<div id="Z2" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find Z<sub>11</sub>, Z<sub>21</sub> apply Power to Input port <br/>and set Output port to Intermediate.</p>
+			<p>Case 2: To find Z<sub>12</sub>, Z<sub>22</sub> apply Power to Output port <br/>and set Input port to Intermediate.</p></br>
+			</div>
+			
+	
+		<div id="Yparameter2" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>Y parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="text"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+		
+
+		<input type="number" name="VB3" value="0" id="VB3" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AB3" value="0" id="AB3" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VB33" value="0" id="VB33" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AB33" value="0" id="AB33" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+			 Y<sub>11</sub> = <input type="number" name="Y11B" value="0" id="Y11B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Y<sub>21</sub> = <input type="number" name="Y21B" value="0" id="Y21B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			 Y<sub>12</sub> = <input type="number" name="Y12B" value="0" id="Y12B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Y<sub>22</sub> = <input type="number" name="Y22B" value="0" id="Y22B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			</div>
+			<div id="Y2" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find Y<sub>11</sub>, Y<sub>21</sub> apply Power to Input port <br/>and set Output port to Short.</p>
+			<p>Case 2: To find Y<sub>12</sub>, Y<sub>22</sub> apply Power to Output port <br/>and set Input port to Short.</p></br>
+			</div>	
+		
+		<div id="hparameter2" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>h parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="text"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			<input type="number" name="VB4" value="0" id="VB4" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AB4" value="0" id="AB4" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VB44" value="0" id="VB44" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AB44" value="0" id="AB44" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+		&nbsp; h<sub>11</sub> = <input type="number" name="h11B" value="0" id="h11B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>21</sub> = <input type="number" name="h21B" value="0" id="h21B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>12</sub> = <input type="number" name="h12B" value="0" id="h12B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>22</sub> = <input type="number" name="h22B" value="0" id="h22B" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+		</div>
+		<div id="H2" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find h<sub>11</sub>, h<sub>21</sub> apply Power to Input port <br/>and set Output port to Short.</p>
+			<p>Case 2: To find h<sub>12</sub>, h<sub>22</sub> apply Power to Output port <br/>and set Input port to Intermediate.</p></br>
+			</div>	
+		
+			<div id="ABCD2" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>ABCD parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="test"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			<input type="number" name="VB5" value="0" id="VB5" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AB5" value="0" id="AB5" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VB55" value="0" id="VB55" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AB55" value="0" id="AB55" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>	
+			&nbsp;&nbsp;&nbsp; A = <input type="number" name="AB" value="0" id="AB" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp;&nbsp; C = <input type="number" name="CB" value="0" id="CB" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp; B = <input type="number" name="BB" value="0" id="BB" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp;&nbsp; D = <input type="number" name="DB" value="0" id="DB" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			</div>
+			<div id="T2" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find A, C apply Power to Input port <br/>and set Output port to Intermediate.</p>
+			<p>Case 2: To find B, D apply Power to Input port <br/>and set Output port to Short.</p>
+			</div>	
+			
+				<div style=" position:absolute; top:95px; left:82px; width:330px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+				<div style="text-align:center; "><b style="font-size:27px;">Controls</b><br>
+				Parameter Select: &nbsp
+				<select name="SW1B" id="SW1B"  onclick="showDiv2(this)" style="cursor: pointer; background-color:#85D2EE; width:127px">
+						<option value="1"  SELECTED>Z parameter</option><option value="2">Y parameter</option><option value="3">h parameter</option>
+						<option value="4">ABCD parameter</option>
+				</select><br>
+				
+				<p style="text-align:center; position:absolute; left:90px; width:80px; top:38px">Case:</p>
+				<select name="SW4B" id="SW4B" style="cursor:pointer; background-color:#85D2EE; position:absolute; top:60px; left:190px ; width:100px">
+	<option value="1" SELECTED>Case 1</option><option value="2">Case 2</option></select>	
+				
+				<select name="SW2B" id="SW2B" onchange="showImg2(this)" onfocus="this.selectedIndex = -1  " style="cursor:pointer; background-color:#85D2EE; position:absolute; top:-40px; left:392px ; width:100px">
+	<option value="1" SELECTED>Power</option><option value="2">Short</option><option value="3">Intermediate</option></select>
+	
+	<select name="SW3B" id="SW3B" onchange="showPic2(this)"  onfocus="this.selectedIndex = -1  " style="cursor:pointer; background-color:#85D2EE; position:absolute; top:-35px;  left:860px; width:100px">
+	<option value="1" SELECTED>Power</option><option value="2">Short</option><option value="3">Intermediate</option></select>
+			
+				<input type="button" value="Simulate" onclick="simulateB()" style="text-align:center; cursor: pointer; background-color:#17D3D8;border-radius:20px; width:130px; height:50px; font-size:20px; position:absolute; top:105px; right:100px;border-shadow:2px">
+			</div>
+			</div>
+			<script>
+function showDiv2(select){
+			if(select.value==1){
+    document.getElementById('Zparameter2').style.display = "block";
+	document.getElementById('Z2').style.display = "block";
+	document.getElementById('Zpro1').style.display = "block";
+}
+		else{
+
+    document.getElementById('Zparameter2').style.display = "none";
+     document.getElementById('Z2').style.display = "none";
+	 document.getElementById('Zpro1').style.display = "none"
+}
+           if(select.value==2){
+document.getElementById('Yparameter2').style.display = "block";
+document.getElementById('Y2').style.display = "block";
+document.getElementById('Ypro1').style.display = "block";
+}
+else{
+
+document.getElementById('Yparameter2').style.display = "none";
+document.getElementById('Y2').style.display = "none";
+document.getElementById('Ypro1').style.display = "none";
+}
+  if(select.value==3){
+document.getElementById('hparameter2').style.display = "block";
+document.getElementById('H2').style.display = "block";
+document.getElementById('hpro1').style.display = "block";
+}
+else{
+
+document.getElementById('hparameter2').style.display = "none";
+document.getElementById('H2').style.display = "none";
+document.getElementById('hpro1').style.display = "none";
+}
+
+if(select.value==4){
+document.getElementById('ABCD2').style.display = "block";
+document.getElementById('T2').style.display = "block";
+document.getElementById('Apro1').style.display = "block";
+}
+else{
+document.getElementById('ABCD2').style.display = "none";
+document.getElementById('T2').style.display = "none";
+document.getElementById('Apro1').style.display = "none";
+}
+
+}
+
+function showImg2(select) {
+if(select.value==1){
+document.getElementById('image2').style.display="block";
+document.getElementById('myImage2').style.display="block";
+}
+else{
+document.getElementById('image2').style.display="none";
+document.getElementById('myImage2').style.display="none";
+}
+if (select.value==2) {
+document.getElementById('Line2').style.display="block";
+}
+else{
+document.getElementById('Line2').style.display="none";
+}
+}
+
+
+
+function showPic2(select) {
+if(select.value==1){
+document.getElementById('Rimage2').style.display="block";
+document.getElementById('2ndImage2').style.display="block";
+}
+else{
+document.getElementById('Rimage2').style.display="none";
+document.getElementById('2ndImage2').style.display="none";
+}
+if (select.value==2) {
+document.getElementById('RLine2').style.display="block";
+}
+else{
+document.getElementById('RLine2').style.display="none";
+}
+}
+</script>
+</div>
+</li>
+<!-------------------------------------------------------------- MN Network ------------------------------------------------------------------------>
+  <li>
+          <input type="radio" name="tabs" id="tab3">
+          <label for="tab3">MN Network</label>
+          <div id="tab-content3" class="tab-content animated fadeIn">
+			<u>Determination of 2-port network parameters for MN Network:</u><br>
+			<img src="images/MN_net.jpg" align="middle" style="position:absolute; top:42px; left:450px; display: block; height:50%; border: 2px solid #3DC4F5; border-radius: 10px;">
+
+<img id="myImage3" onclick="changeImage()" src="./images/s1.png" style="display:none; cursor: pointer; position:absolute; height:50px; width:50px; top:160px;  right:633px;"/>
+			<img id="2ndImage3" onclick="changeImage()" src="./images/s1.png" style="display:none; cursor: pointer; position:absolute; height:50px; width:50px; top:155px;  right:-35px;"/>
+			
+         	   <img id="image3" src="images/CPLeft.png"  style="display:none; position:absolute; top:80px;  right:540px"/>
+               <img id="Rimage3" src="images/CPRight.png"  style="display:none; position:absolute; top:83px;  right:10px"/>
+               <img id="Line3" src="images/CLLeft.png"  style="display:none; position:absolute; top:90px;  right:587px"/>
+               <img id="RLine3" src="images/CLLeft.png"  style="display:none; position:absolute; top:93px;  right:53px"/>
+			
+			<div id="Zparameter3" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>Z parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="text"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			
+			
+			<input type="number" name="VC11" value="0" id="VC11" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AC11" value="0" id="AC11" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VC22" value="0" id="VC22" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AC22" value="0" id="AC22" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+			Z<sub>11</sub> = <input type="number" name="Z11C" value="0" id="Z11C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Z<sub>21</sub> = <input type="number" name="Z21C" value="0" id="Z21C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			Z<sub>12</sub> = <input type="number" name="Z12C" value="0" id="Z12C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Z<sub>22</sub> = <input type="number" name="Z22C" value="0" id="Z22C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			</div>
+			<div id="Z3" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find Z<sub>11</sub>, Z<sub>21</sub> apply Power to Input port <br/>and set Output port to Intermediate.</p>
+			<p>Case 2: To find Z<sub>12</sub>, Z<sub>22</sub> apply Power to Output port <br/>and set Input port to Intermediate.</p></br>
+			</div>
+			
+	
+		<div id="Yparameter3" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>Y parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="text"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+		
+
+		<input type="number" name="VC3" value="0" id="VC3" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AC3" value="0" id="AC3" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VC33" value="0" id="VC33" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AC33" value="0" id="AC33" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+			 Y<sub>11</sub> = <input type="number" name="Y11C" value="0" id="Y11C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Y<sub>21</sub> = <input type="number" name="Y21C" value="0" id="Y21C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			 Y<sub>12</sub> = <input type="number" name="Y12C" value="0" id="Y12C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly"> 
+			&nbsp; Y<sub>22</sub> = <input type="number" name="Y22C" value="0" id="Y22C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			</div>
+			<div id="Y3" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find Y<sub>11</sub>, Y<sub>21</sub> apply Power to Input port <br/>and set Output port to Short.</p>
+			<p>Case 2: To find Y<sub>12</sub>, Y<sub>22</sub> apply Power to Output port <br/>and set Input port to Short.</p></br>
+			</div>	
+		
+		<div id="hparameter3" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>h parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="text"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			<input type="number" name="VC4" value="0" id="VC4" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AC4" value="0" id="AC4" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VC44" value="0" id="VC44" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AC44" value="0" id="AC44" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>
+		&nbsp; h<sub>11</sub> = <input type="number" name="h11C" value="0" id="h11C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>21</sub> = <input type="number" name="h21C" value="0" id="h21C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>12</sub> = <input type="number" name="h12C" value="0" id="h12C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp; h<sub>22</sub> = <input type="number" name="h22C" value="0" id="h22C" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+		</div>
+		<div id="H3" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find h<sub>11</sub>, h<sub>21</sub> apply Power to Input port <br/>and set Output port to Short.</p>
+			<p>Case 2: To find h<sub>12</sub>, h<sub>22</sub> apply Power to Output port <br/>and set Input port to Intermediate.</p></br>
+			</div>	
+		
+			<div id="ABCD3" style="display:none;text-align:center; position:relative; top:308px; left:5px; width:460px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+			<b>ABCD parameter values</b><br>
+			<input type="text"  value="V1 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly"> 
+			<input type="test"  value="I1 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="V2 Voltmeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<input type="text"  value="I2 Ammeter" style="background-color:transparent; text-align:center; font-size:15px; color:yellow; width:100px; border:none" readonly="readonly">
+			<br>
+			<input type="number" name="VC5" value="0" id="VC5" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly"> 
+			<input type="number" name="AC5" value="0" id="AC5" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="VC55" value="0" id="VC55" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<input type="number" name="AC55" value="0" id="AC55" style="background-color:#E3DE84; text-align:center; width:100px" readonly="readonly">
+			<br><br>	
+			&nbsp;&nbsp;&nbsp; A = <input type="number" name="AC" value="0" id="AC" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp;&nbsp; C = <input type="number" name="CC" value="0" id="CC" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp; B = <input type="number" name="BC" value="0" id="BC" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			&nbsp;&nbsp;&nbsp;&nbsp; D = <input type="number" name="DC" value="0" id="DC" style="background-color:#E3DE84; text-align:center; width:50px" readonly="readonly">
+			</div>
+			<div id="T3" style="display:none;text-align:center;position:relative; top:105px;left:520px; width:450px; height:190px;  border: 3px solid #3DC4F5; border-radius: 10px;padding-bottom:5px">
+			<b>Instructions </b>
+			<p>Case 1: To find A, C apply Power to Input port <br/>and set Output port to Intermediate.</p>
+			<p>Case 2: To find B, D apply Power to Input port <br/>and set Output port to Short.</p>
+			</div>	
+			
+				<div style=" position:absolute; top:95px; left:52px; width:330px; height:182px; margin-top:auto; border: 3px solid #3DC4F5; border-radius: 10px;">
+				<div style="text-align:center; "><b style="font-size:27px;">Controls</b><br>
+				Parameter Select: &nbsp
+				<select name="SW1C" id="SW1C"  onclick="showDiv3(this)" style="cursor: pointer; background-color:#85D2EE; width:127px">
+						<option value="1"  SELECTED>Z parameter</option><option value="2">Y parameter</option><option value="3">h parameter</option>
+						<option value="4">ABCD parameter</option>
+				</select><br>
+				
+				<p style="text-align:center; position:absolute; left:90px; width:80px; top:38px">Case:</p>
+				<select name="SW4C" id="SW4C" style="cursor:pointer; background-color:#85D2EE; position:absolute; top:60px; left:190px ; width:100px">
+	<option value="1" SELECTED>Case 1</option><option value="2">Case 2</option></select>	
+				
+				<select name="SW2C" id="SW2C" onchange="showImg3(this)" onfocus="this.selectedIndex = -1  " style="cursor:pointer; background-color:#85D2EE; position:absolute; top:-40px; left:340px ; width:100px">
+	<option value="1" SELECTED>Power</option><option value="2">Short</option><option value="3">Intermediate</option></select>
+	
+	<select name="SW3C" id="SW3C" onchange="showPic3(this)"  onfocus="this.selectedIndex = -1  " style="cursor:pointer; background-color:#85D2EE; position:absolute; top:-35px;  left:975px; width:100px">
+	<option value="1" SELECTED>Power</option><option value="2">Short</option><option value="3">Intermediate</option></select>
+			
+				<input type="button" value="Simulate" onclick="simulateC()" style="text-align:center; cursor: pointer; background-color:#36B457;border-radius:20px; width:130px; height:50px; font-size:20px; position:absolute; top:105px; right:100px;border-shadow:2px">
+			</div>
+			</div>
+			<script>
+function showDiv3(select){
+			if(select.value==1){
+    document.getElementById('Zparameter3').style.display = "block";
+	document.getElementById('Z3').style.display = "block";
+	document.getElementById('Zpro1').style.display = "block";
+}
+		else{
+
+    document.getElementById('Zparameter3').style.display = "none";
+     document.getElementById('Z3').style.display = "none";
+	 document.getElementById('Zpro1').style.display = "none"
+}
+           if(select.value==2){
+document.getElementById('Yparameter3').style.display = "block";
+document.getElementById('Y3').style.display = "block";
+document.getElementById('Ypro1').style.display = "block";
+}
+else{
+
+document.getElementById('Yparameter3').style.display = "none";
+document.getElementById('Y3').style.display = "none";
+document.getElementById('Ypro1').style.display = "none";
+}
+  if(select.value==3){
+document.getElementById('hparameter3').style.display = "block";
+document.getElementById('H3').style.display = "block";
+document.getElementById('hpro1').style.display = "block";
+}
+else{
+
+document.getElementById('hparameter3').style.display = "none";
+document.getElementById('H3').style.display = "none";
+document.getElementById('hpro1').style.display = "none";
+}
+
+if(select.value==4){
+document.getElementById('ABCD3').style.display = "block";
+document.getElementById('T3').style.display = "block";
+document.getElementById('Apro1').style.display = "block";
+}
+else{
+document.getElementById('ABCD3').style.display = "none";
+document.getElementById('T3').style.display = "none";
+document.getElementById('Apro1').style.display = "none";
+}
+
+}
+
+function showImg3(select) {
+if(select.value==1){
+document.getElementById('image3').style.display="block";
+document.getElementById('myImage3').style.display="block";
+}
+else{
+document.getElementById('image3').style.display="none";
+document.getElementById('myImage3').style.display="none";
+}
+if (select.value==2) {
+document.getElementById('Line3').style.display="block";
+}
+else{
+document.getElementById('Line3').style.display="none";
+}
+}
+
+
+
+function showPic3(select) {
+if(select.value==1){
+document.getElementById('Rimage3').style.display="block";
+document.getElementById('2ndImage3').style.display="block";
+}
+else{
+document.getElementById('Rimage3').style.display="none";
+document.getElementById('2ndImage3').style.display="none";
+}
+if (select.value==2) {
+document.getElementById('RLine3').style.display="block";
+}
+else{
+document.getElementById('RLine3').style.display="none";
+}
+}
+</script>
+</div>
+</li>
+	</ul>
+		</form>
+</div>		
+	<script src="../assets/js/iframeResize.js"></script></body>
+</html>	
+			
+			
